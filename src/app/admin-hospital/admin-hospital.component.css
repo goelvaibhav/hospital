@@ -1,0 +1,7 @@
+mat-grid-tile{
+    background-color:lightgreen;
+}
+.tile button{
+    width: 100%;
+    height: 100%;
+}
