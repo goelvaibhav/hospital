@@ -3,17 +3,19 @@
 
 <mat-grid-list cols = '5' rowHeight = "100px" >
     <div class = "tile">
-        <mat-grid-tile> <button mat-button> OR Setup Request</button> </mat-grid-tile>
-        <mat-grid-tile> <button mat-button> Emergency Request </button> </mat-grid-tile>
-    </div>
+        <mat-grid-tile> <button mat-button (click)=onSelect(Or)> OR Setup Request</button> </mat-grid-tile>
+        <mat-grid-tile> <button mat-button (click)=onSelect(Emergency) > Emergency Request </button> </mat-grid-tile>
+    </div> 
 </mat-grid-list>
-  
 
 <p>These are permenet tabs</p>
 <mat-grid-list cols = '5' rowHeight = "100px" >
     <div class = "tile">
-        <mat-grid-tile> <button mat-button> History</button> </mat-grid-tile>
-        <mat-grid-tile> <button mat-button> Manage and admin Details</button> </mat-grid-tile>
+        <mat-grid-tile> <button mat-button (click)=onSelect(History) > History</button> </mat-grid-tile>
+        <mat-grid-tile> <button mat-button (click)=onSelect(Details) > Manage and admin Details</button> </mat-grid-tile>
     </div>
 </mat-grid-list>
   
+<!-- <div *ngFor = "let color of colors">
+    <h2>{{color}}</h2>
+</div> -->

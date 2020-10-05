@@ -3,8 +3,8 @@
 
 <mat-grid-list cols = '5' rowHeight = "100px" >
     <div class = "tile">
-        <mat-grid-tile> <button mat-button> Setup Operations <br> device requirement portfolio </button> </mat-grid-tile>
-        <mat-grid-tile> <button mat-button> Alerts </button> </mat-grid-tile>
+        <mat-grid-tile> <button mat-button (click)=onSelect(OrPortfolio)> Setup Operations <br> device requirement portfolio </button> </mat-grid-tile>
+        <mat-grid-tile> <button mat-button (click)=onSelect(Alert)> Alerts </button> </mat-grid-tile>
     </div>
 </mat-grid-list>
 <br>
@@ -12,10 +12,10 @@
 <mat-grid-list cols = '5' rowHeight = "100px" >
     <div class = "tile">
         
-        <mat-grid-tile> <button mat-button> History</button> </mat-grid-tile>
-        <mat-grid-tile> <button mat-button> Search Techi</button> </mat-grid-tile>
-        <mat-grid-tile> <button mat-button> Admin Details</button> </mat-grid-tile>
-        <mat-grid-tile> <button mat-button> DashBoard</button> </mat-grid-tile>
+        <mat-grid-tile> <button mat-button (click)=onSelect(History)> History</button> </mat-grid-tile>
+        <mat-grid-tile> <button mat-button (click)=onSelect(SearchTechi)> Search Techi</button> </mat-grid-tile>
+        <mat-grid-tile> <button mat-button (click)=onSelect(Details)> Admin Details</button> </mat-grid-tile>
+        <mat-grid-tile> <button mat-button (click)=onSelect(Dashboard)> DashBoard</button> </mat-grid-tile>
     </div>
 </mat-grid-list>
  

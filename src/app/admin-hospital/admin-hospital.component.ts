@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Router } from '@angular/router';
 
 @Component({
   selector: 'app-admin-hospital',
@@ -7,10 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AdminHospitalComponent implements OnInit {
 
-  name = "admin";// use user id here
-  constructor() { }
+  Device = "device";
+  ManageUser = "manageUser";
+  Dashboard = "dashboard";
+  constructor(private router:Router) { }
 
   ngOnInit(): void {
+  }
+  onSelect(pathVar:string){
+    this.router.navigate(['/admin', pathVar]);
   }
 
 }
